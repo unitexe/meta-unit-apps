@@ -17,4 +17,5 @@ S = "${WORKDIR}/git"
 
 inherit dotnet
 
-DEPENDS = "lttng-ust"
+DEPENDS:append = " lttng-ust"
+RDEPENDS:${PN}:append = " lttng-ust-dev"
