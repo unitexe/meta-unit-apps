@@ -16,3 +16,5 @@ DOTNET_PROJECT = "DotnetHelloWorld"
 S = "${WORKDIR}/git"
 
 inherit dotnet
+
+DEPENDS = "lttng-ust"
