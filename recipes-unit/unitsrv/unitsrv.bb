@@ -8,4 +8,6 @@ SRC_URI = "git://github.com/unitexe/unitsrv.git;protocol=https;branch=main"
 SRCREV = "95eef9d4c5b1320b98c7f6c3108a6ee1ac440359"
 require ${BPN}-crates.inc
 
+DEPENDS = "protobuf-native"
+
 S = "${UNPACKDIR}/git"
