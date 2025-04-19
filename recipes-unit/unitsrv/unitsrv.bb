@@ -6,6 +6,6 @@ inherit cargo cargo-update-recipe-crates
 
 SRC_URI = "git://github.com/unitexe/unitsrv.git;protocol=https;branch=main"
 SRCREV = "95eef9d4c5b1320b98c7f6c3108a6ee1ac440359"
-#require ${BPN}-crates.inc
+require ${BPN}-crates.inc
 
 S = "${UNPACKDIR}/git"
