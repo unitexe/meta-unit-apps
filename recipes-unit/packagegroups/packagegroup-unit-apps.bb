@@ -5,4 +5,4 @@ LICENSE = "MIT"
 
 inherit packagegroup
 
-RDEPENDS:${PN}:append = " unitsrv"
+RDEPENDS:${PN}:append = " systemd-unitsrv"
