@@ -88,6 +88,7 @@ SRC_URI += " \
     crate://crates.io/tokio-util/0.7.14 \
     crate://crates.io/tonic/0.13.0 \
     crate://crates.io/tonic-build/0.13.0 \
+    crate://crates.io/tonic-reflection/0.13.0 \
     crate://crates.io/tower/0.5.2 \
     crate://crates.io/tower-layer/0.3.3 \
     crate://crates.io/tower-service/0.3.3 \
@@ -198,6 +199,7 @@ SRC_URI[tokio-stream-0.1.17.sha256sum] = "eca58d7bba4a75707817a2c44174253f9236b2
 SRC_URI[tokio-util-0.7.14.sha256sum] = "6b9590b93e6fcc1739458317cccd391ad3955e2bde8913edf6f95f9e65a8f034"
 SRC_URI[tonic-0.13.0.sha256sum] = "85839f0b32fd242bb3209262371d07feda6d780d16ee9d2bc88581b89da1549b"
 SRC_URI[tonic-build-0.13.0.sha256sum] = "d85f0383fadd15609306383a90e85eaed44169f931a5d2be1b42c76ceff1825e"
+SRC_URI[tonic-reflection-0.13.0.sha256sum] = "88fa815be858816dad226a49439ee90b7bcf81ab55bee72fdb217f1e6778c3ca"
 SRC_URI[tower-0.5.2.sha256sum] = "d039ad9159c98b70ecfd540b2573b97f7f52c3e8d9f8ad57a24b916a536975f9"
 SRC_URI[tower-layer-0.3.3.sha256sum] = "121c2a6cda46980bb0fcd1647ffaf6cd3fc79a013de288782836f6df9c48780e"
 SRC_URI[tower-service-0.3.3.sha256sum] = "8df9b6e13f2d32c91b9bd719c00d1958837bc7dec474d94952798cc8e69eeec3"
