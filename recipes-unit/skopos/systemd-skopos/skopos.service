@@ -1,0 +1,10 @@
+[Unit]
+Description=Launch skopos server
+After=network.target
+
+[Service]
+Restart=on-failure
+ExecStart=/usr/bin/skopos
+
+[Install]
+WantedBy=multi-user.target
