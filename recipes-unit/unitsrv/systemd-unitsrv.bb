@@ -9,11 +9,10 @@ SRC_URI = "\
     file://unitsrv.service \
 "
 
-S = "${WORKDIR}/sources"
-UNPACKDIR = "${S}"
+S = "${UNPACKDIR}"
 
 do_install() {
-    install -D -p -m0644 ${S}/unitsrv.service ${D}${systemd_system_unitdir}/unitsrv.service
+    install -D -p -m0644 ${UNPACKDIR}/unitsrv.service ${D}${systemd_system_unitdir}/unitsrv.service
 }
 
 inherit systemd

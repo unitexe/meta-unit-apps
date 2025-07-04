@@ -10,5 +10,3 @@ SRCREV = "9ee3f5b60329fcf946db5c9eb7bc1b6be99b90c2"
 require ${BPN}-crates.inc
 
 DEPENDS = "protobuf-native"
-
-S = "${UNPACKDIR}/git"

@@ -9,11 +9,10 @@ SRC_URI = "\
     file://skopos.service \
 "
 
-S = "${WORKDIR}/sources"
-UNPACKDIR = "${S}"
+S = "${UNPACKDIR}"
 
 do_install() {
-    install -D -p -m0644 ${S}/skopos.service ${D}${systemd_system_unitdir}/skopos.service
+    install -D -p -m0644 ${UNPACKDIR}/skopos.service ${D}${systemd_system_unitdir}/skopos.service
 }
 
 inherit systemd
