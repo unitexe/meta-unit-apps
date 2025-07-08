@@ -5,5 +5,4 @@ LICENSE = "MIT"
 
 inherit packagegroup
 
-RDEPENDS:${PN}:append = " systemd-unitsrv"
 RDEPENDS:${PN}:append = " systemd-skopos"
