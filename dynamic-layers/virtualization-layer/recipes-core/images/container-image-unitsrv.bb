@@ -6,6 +6,8 @@ IMAGE_FSTYPES = "container oci"
 inherit image
 inherit image-oci
 
+CONTAINER_SHELL ?= "${@bb.utils.contains('PACKAGE_EXTRA_ARCHS', 'container-dummy-provides', 'container-dummy-provides', 'busybox', d)}"
+
 OCI_IMAGE_ENTRYPOINT = "/usr/bin/unitsrv"
 OCI_IMAGE_PORTS = "50051/tcp"
 
@@ -17,7 +19,7 @@ IMAGE_INSTALL = " \
     base-files \
     base-passwd \
     netbase \
-    busybox \
+    ${CONTAINER_SHELL} \
     unitsrv \
 "
 
