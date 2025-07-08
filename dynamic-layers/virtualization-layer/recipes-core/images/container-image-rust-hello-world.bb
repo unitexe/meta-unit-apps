@@ -15,8 +15,6 @@ IMAGE_LINGUAS = ""
 NO_RECOMMENDATIONS = "1"
 
 IMAGE_INSTALL = " \
-    base-files \
-    base-passwd \
     ${CONTAINER_SHELL} \
     rust-hello-world \
 "
