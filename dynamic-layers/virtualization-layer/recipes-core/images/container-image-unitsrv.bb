@@ -10,7 +10,7 @@ CONTAINER_SHELL ?= "${@bb.utils.contains('PACKAGE_EXTRA_ARCHS', 'container-dummy
 
 OCI_IMAGE_ENTRYPOINT = "/usr/bin/unitsrv"
 OCI_IMAGE_PORTS = "50051/tcp"
-OCI_IMAGE_TAG = "latest-${TCLIBC}"
+OCI_IMAGE_TAG = "latest${@['', '-${TCLIBC}'][d.getVar('TCLIBC') == 'musl']}"
 
 IMAGE_FEATURES = ""
 IMAGE_LINGUAS = ""
