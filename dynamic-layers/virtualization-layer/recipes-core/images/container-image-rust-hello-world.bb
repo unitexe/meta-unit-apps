@@ -9,6 +9,7 @@ inherit image-oci
 CONTAINER_SHELL ?= "${@bb.utils.contains('PACKAGE_EXTRA_ARCHS', 'container-dummy-provides', 'container-dummy-provides', 'busybox', d)}"
 
 OCI_IMAGE_ENTRYPOINT = "/usr/bin/rust-hello-world"
+OCI_IMAGE_TAG = "latest-${TCLIBC}"
 
 IMAGE_FEATURES = ""
 IMAGE_LINGUAS = ""
