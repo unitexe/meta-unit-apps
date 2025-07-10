@@ -1,0 +1,10 @@
+[Unit]
+Description=Launch python unit server
+After=network.target
+
+[Service]
+Restart=on-failure
+ExecStart=/usr/bin/python3 -u /usr/bin/unitsrvpy-cli
+
+[Install]
+WantedBy=multi-user.target
