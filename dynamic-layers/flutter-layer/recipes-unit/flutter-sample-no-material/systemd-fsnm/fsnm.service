@@ -1,0 +1,8 @@
+[Unit]
+Description=Boot to flutter sample no material
+
+[Service]
+ExecStart=/usr/bin/flutter-pi --release /usr/share/flutter/flutter-sample-no-material/@@FLUTTER_SDK_TAG@@/release
+
+[Install]
+WantedBy=multi-user.target
